@@ -15,7 +15,7 @@ const newYork = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Flow",
+  title: "flow",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${newYork.variable} antialiased`}>
         <Providers>{children}</Providers>
       </body>
